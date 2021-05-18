@@ -6,7 +6,7 @@ require_once 'Core.php';
 $var = file_get_contents("php://input");
 $core = new Core($var);
 file_put_contents('result.txt', $var);
-$group_chat_id = -1001203038873;
+$group_chat_id = -000000000000;
 
 if ($core->senderArray['chat_id'] != $group_chat_id) {
     switch ($core->senderArray['type']['text']) {
